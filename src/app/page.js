@@ -1,95 +1,58 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
+import NavBar from "../../components/NavBar";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      <main className={styles.main}>
+        <section className={styles.hero}>
+          <div className={styles.heroTitleWrapper}>
+            <div className={styles.heroTitle}>
+              <h1>Thoba</h1>
+              <h1>Chembeni</h1>
+            </div>
+            <span className={styles.heroSpan}>Presents</span>
+          </div>
+          <div className={styles.heroImage}>
+            <Image src="/BerryTreeesLogoBW.png" fill />
+          </div>
+        </section>
+        <section className={styles.subSection}>
+          <h1 className={styles.subSectionTitle}>Berry Tree3s</h1>
+          <h3>18:fifty3</h3>
+          <h4>TD Chembeni Apparel/Art est 2021</h4>
+        </section>
+        {/* <div className={styles.divider} /> */}
+        <section className={styles.copySection} id="about">
+          <h2 className={styles.copyTitle}>What is Berry Treees?</h2>
+          <div className={styles.contentWrapper}>
+            <p>
+              Consectetur occaecat magna in amet commodo adipisicing magna sint.
+              Ipsum eiusmod exercitation magna aliquip cupidatat id laborum
+              exercitation nisi. Ut consectetur ipsum irure incididunt ex
+              excepteur in adipisicing quis exercitation ullamco excepteur.
+              Nostrud do sint veniam excepteur enim consequat anim laborum
+              pariatur. Nostrud incididunt pariatur aute aliqua consequat sit
+              quis. Elit reprehenderit in excepteur nostrud est nostrud quis
+              cupidatat.
+            </p>
+            <p>
+              Tempor id qui irure ipsum consequat sunt. Sint dolor officia
+              adipisicing pariatur ea culpa labore nostrud laboris duis non. In
+              magna aute irure ea incididunt reprehenderit. Laborum velit do sit
+              Lorem culpa consectetur nisi excepteur sunt do laboris. Irure id
+              dolore officia nostrud elit sint non et et. Nisi deserunt Lorem
+              exercitation ut aliqua est deserunt officia cillum et culpa.
+            </p>
+            <p>
+              Laborum est veniam amet nisi cillum nisi officia culpa. Aliquip
+              exercitation ullamco quis ad ipsum ad dolor tempor in laboris
+              officia laborum tempor aliquip. Eu sunt dolor nisi reprehenderit
+              sit cupidatat enim ex sit. Commodo pariatur sunt anim dolor Lorem
+              do voluptate non minim dolor anim.
+            </p>
+          </div>
+        </section>
+      </main>
+  );
 }

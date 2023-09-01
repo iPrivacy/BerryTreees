@@ -1,0 +1,169 @@
+.modalContainer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    left:0;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    width: 32px;
+    height: 32px;
+    color: var(--black);
+    margin-top: 30px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+.icon:hover{
+    color: var(--Golden);
+}
+
+.contentWrapper{
+    margin: 0 auto;
+    width: 1110px;
+    height: 550px;
+    display: flex;
+}
+.imageWrapper{
+    position: relative;
+    width: 50%;
+}
+.descriptionWrapper{
+    width: 50%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: auto 0;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.description>p{
+    font-size: 13px;
+    letter-spacing: 1.8px;
+    text-transform: capitalize;
+}
+.description>h2{
+    color: var(--Golden);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}.description>h4{
+    color: var(--Golden);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.thumbnailsWrapper{
+    width: 100%;
+    height: 112px;
+    display: flex;
+    gap: 30px;
+}
+
+.thumbnail{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    transition: box-shadow 1.5s ease-out;
+}
+.thumbnail:hover{
+    box-shadow: 0px 0px 29px 0px var(--Golden);
+-webkit-box-shadow: 0px 0px 29px 0px var(--Golden);
+-moz-box-shadow: 0px 0px 29px 0px var(--Golden);
+
+}
+
+@media (max-width: 480px){
+    .modalContainer{
+        padding: 0px 20px;
+        min-height: 100vh;
+    }
+    .closeModal{
+        position: absolute;
+    z-index: 999;
+    top: -20px;
+    left: -30px;
+    }
+    .contentWrapper{
+        width: 100%;
+        padding: 0px 27px;
+        flex-direction: column;
+        min-height: 100vh;
+        margin-top: 11rem;
+    }
+    .imageWrapper{
+        height: 25vh;
+        width: 100%;
+    }
+    .modalContainer{
+        width: 100%;
+        padding: 0;
+    }
+    .descriptionWrapper{
+        width: 100%;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    .description{
+        gap: 30px;
+        letter-spacing: 1.4px;
+    }
+}
+@media (min-width: 481px) and (max-width:767px){
+    .modalContainer{
+        padding: 0px 20px;
+        min-height: 100vh;
+    }
+    .closeModal{
+        position: absolute;
+    z-index: 999;
+    top: -20px;
+    left: -30px;
+    }
+    .contentWrapper{
+        max-width: 600px;
+        padding: 0px 27px;
+        flex-direction: column;
+        min-height: 100vh;
+        margin-top: 11rem;
+    }
+    .imageWrapper{
+        height: 25vh;
+        width: 100%;
+    }
+    .modalContainer{
+        width: 100%;
+        padding: 0;
+    }
+    .descriptionWrapper{
+        width: 100%;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    .description{
+        gap: 30px;
+        letter-spacing: 1.4px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .modalContainer{
+        padding: 0px 30px;
+    }.icon{
+        left: 30px;
+    }
+}
+@media (min-width: 992px) and (max-width:1199px){
+    .modalContainer{
+        padding: 0px 30px;
+    }.icon{
+        left: 30px;
+    }
+}

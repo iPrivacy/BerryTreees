@@ -1,0 +1,144 @@
+.mainWrapper {
+    width: 100vw;
+    margin-top: 10rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: '';
+    padding: 0 20px;
+}
+
+
+.contentWrapper {
+    width: 800px;
+    height: 622px;
+    background-color: white;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.formHeading {
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.formHeading>h1 {
+    font-size: 40px;
+}
+
+.formHeading>h4 {
+    color: var(--Golden);
+}
+
+.form {
+    width: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 320px;
+}
+
+.input {
+    padding: 10px 4px;
+    border: none;
+    background-color: var(--light-grey);
+    border-bottom: var(--Golden) solid 1px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .wrapper>input {
+    width: 45%;
+} */
+
+.form>label {
+    font-size: 13px;
+    padding: 0px 50px;
+}
+
+.berryTreees {
+    color: var(--Golden);
+    text-decoration: underline;
+}
+
+.submitBtn {
+    padding: 10px;
+    background-color: var(--Golden);
+    color: white;
+    border: none;
+    border-bottom: var(--Golden) solid 1px;
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+    font-size: 13px;
+}
+
+.inputWrapper{
+    display: flex;
+    width: 45%;
+    /* background-color: aqua; */
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputWrapper>input{
+    width: 100%;
+}
+@media (max-width: 480px) {
+    .mainWrapper {
+        padding: 0 20px;
+    }
+
+    .contentWrapper {
+        width: 100vw;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .wrapper>.inputWrapper {
+        width: 100%;
+    }
+
+    .form>label {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width:767px) {
+
+    .contentWrapper {
+        width: 100vw;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .wrapper>.inputWrapper {
+        width: 100%;
+    }
+
+    .form>label {
+        padding: 0 10px;
+    }
+}

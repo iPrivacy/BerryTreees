@@ -1,0 +1,62 @@
+.mainWrapper {
+    width: 100vw;
+    height: 93vh;
+    padding: 2rem 3rem;
+}
+
+.imageGrid {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    display: grid;
+    gap: 25px 25px;
+    grid-template-areas:
+        ". Image2 ."
+        ". Image2 Image6"
+        "Image5 Image5 Image6";
+}
+
+.imageWrapper {
+    position: relative;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+
+.imageWrapper:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+.imageWrapper:nth-child(2) { 
+    background-color: aqua;
+    grid-area: Image2;
+}
+.imageWrapper:nth-child(5) { 
+    background-color: aqua;
+    grid-area: Image5;
+}.imageWrapper:nth-child(6) { 
+    background-color: aqua;
+    grid-area: Image6;
+}
+
+@media (max-width: 480px){
+    .mainWrapper{
+        padding: 2rem 1rem;
+    }
+    .imageGrid{
+        width: 100%;
+    }
+}
+@media (min-width: 481px) and (max-width:767px){}
+@media (min-width:768px) and (max-width:991px){
+    .mainWrapper{
+        padding: 2rem 2rem;
+    }
+}
+@media (min-width: 992px) and (max-width:1199px){
+    
+}
+
